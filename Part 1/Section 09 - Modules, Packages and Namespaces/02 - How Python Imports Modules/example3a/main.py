@@ -38,7 +38,11 @@ exec(code, mod.__dict__)
 
 mod.hello()
 
-# but we can also import it, using the module name we specified
+# but we can also import it, using the module name we specified 
+# but notice how we didn't write module1_source. 
+# That's because of the line: sys.modules[module_name] = mod.
+# We added module1 to our cache so Python found it there and did all the executing for us
+
 import module1
 
 module1.hello()
