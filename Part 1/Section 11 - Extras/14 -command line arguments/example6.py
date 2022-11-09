@@ -12,7 +12,7 @@
 import argparse
 
 # this sets up the parser, defining two positional parameters
-parser = argparse.ArgumentParser('Calculates the div a//b and mod a % b of two integers.')
+parser = argparse.ArgumentParser('Calculates the div a//b and mod a % b of two integers.') # here, we are creating the object
 parser.add_argument("a", help='first integer', type=int)
 parser.add_argument("b", help='second integer', type=int)
 
